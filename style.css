@@ -1,0 +1,142 @@
+@import url('reset.css');
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f4f4f4;
+}
+header {
+  background-color: black;
+  color: #fff;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #0056b3;
+  text-align: center;
+}
+.titulo {
+  margin: 0;
+  font-size: 40px;
+  font-weight: 900;
+}
+#carrinho img {
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+#carrinhoQuantidade {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-right: 8px;
+}
+#container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 16px;
+}
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 200px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+.card .imagem {
+  width: 50%;
+}
+.card .texto {
+  font-size: 15px;
+  font-weight: bold;
+  margin: 8px 0;
+}
+.card h2 {
+  color: #333;
+  margin: 8px 0;
+}
+.botao-adicionar {
+  background-color: green;
+  border: none;
+  color: white;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1em;
+  margin: 8px 0;
+  transition: 0.3s ease;
+}
+.botao-adicionar:hover {
+  background-color: rgb(37, 221, 37);
+}
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+.modal-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 500px;
+  width: 100%;
+  position: relative;
+}
+.modal-content .close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+.modal-content h2 {
+  margin: 0;
+  font-size: 1.5em;
+}
+.modal-content .modal-image {
+  width: 100px;
+  height: auto;
+  border-radius: 8px;
+  margin: 10px 0;
+  margin-left: 180px;
+}
+.modal-content p {
+  margin: 10px 0;
+  text-align: center;
+}
+.modal-content h3 {
+  margin: 10px 0;
+  color: blue;
+  text-align: center;
+}
+.modal-content .botao-adicionar {
+  background-color: green;
+  border: none;
+  color: white;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1em;
+  margin-top: 10px;
+  transition: 0.3s ease;
+  margin-left: 145px;
+}
+.modal-content .botao-adicionar:hover {
+  background-color: rgb(15, 197, 15);
+}
